@@ -55,7 +55,7 @@ header{
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    dispay: none;
+    display: none;
 }
 /* oblong keneme */
 .action_btn{
@@ -82,14 +82,20 @@ header{
 }
 /* menu */
 .dropdown_menu{
-    
+    display: none;
     position: absolute;
     right: 2rem;
     top: 60px;
+    height: 0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
 }
 
 .dropdown_menu li{
@@ -105,6 +111,22 @@ header{
     justify-content: center;
 }
 
+/* mero*/
+
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 /* respo design */
 
 @media(max-width: 992px){
@@ -115,5 +137,16 @@ header{
 
     .navbar .toggle_btn{
         display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
     }
 }
