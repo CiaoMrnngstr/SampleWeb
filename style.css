@@ -206,6 +206,9 @@ aside{
     padding: 25px;
   }
 
+frameset {
+    width: 100%;
+    height: calc(100% - 150px);
 
 @media(max-width: 992px){
     .navbar .links,
