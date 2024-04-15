@@ -1,14 +1,14 @@
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans' Sans-Serif;
 }
 
 body{
+    margin: 0;
     height: 100vh;
-    background-color: #fff;
-    background-image: url('https://github.com/CiaoMrnngstr/Java/assets/160130271/27af34f8-6117-40e3-8553-76b55ac4dcc3');
+    background-color: #0D0D3C;
+    /*background-image: url('https://github.com/CiaoMrnngstr/Java/assets/160130271/27af34f8-6117-40e3-8553-76b55ac4dcc3');*/
     background-size: cover;
     background-position: center;
 }
@@ -27,8 +27,10 @@ a:hover{
 }
 
 header{
+    background-color: #191970;
+    text-align: center;
     position: relative;
-    padding: 0 2rem;
+    padding: 8px;
 }
 
 .navbar {
@@ -85,9 +87,9 @@ header{
     display: none;
     position: absolute;
     right: 2rem;
-    top: 60px;
+    top: 90px;
     height: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 245, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -113,8 +115,53 @@ header{
 
 /* mero*/
 
-section#hero{
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/*
+aside#mero{
+    float: none;
+    width: 100%;
+    padding: 10px;
     height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+} 
+#mero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section#hero{
+    float: none;
+    width: 100%;
+    padding: 10px;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+} 
+article#lero{
+    float: none;
+    width: 100%;
+    padding: 10px;
+    display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,18 +170,54 @@ section#hero{
     color: #fff;
 }
 
-#hero h1{
+#lero h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 /* respo design */
+
+aside{
+    width: 35%;
+    float: left;
+    padding: 10px;
+    color: #fff;
+
+  }
+  section{
+    width:30%;
+    float: left;
+    padding:10px;
+    color: #fff;
+
+  }
+  article{
+    width:35%;
+    float: left;
+    padding:10px;
+    color: #fff;
+
+  }
+
+  footer{
+    background-color: hsl(0, 0%, 50%);
+    clear: both;
+    text-align: center;
+    padding: 25px;
+  }
+
 
 @media(max-width: 992px){
     .navbar .links,
     .navbar .action_btn{
         display: none;
     }
-
+    aside#mero,
+    section#hero,
+    article#lero {
+        padding: 0; 
+        text-align: center;
+    }
     .navbar .toggle_btn{
         display: block;
     }
@@ -150,3 +233,9 @@ section#hero{
         width: unset;
     }
 }
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+  }
