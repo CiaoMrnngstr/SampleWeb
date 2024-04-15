@@ -19,12 +19,12 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
-    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 110%;
 }
 
 a:hover{
-    color:orange;
+    color:rgb(255, 162, 0);
 }
 
 header{
@@ -32,7 +32,11 @@ header{
     text-align: center;
     position: relative;
     padding: 9px;
+    background: linear-gradient(to right, rgb(225, 180, 230, 0.5), transparent), #31145f; /* Adjust the colors as needed */
+    backdrop-filter: blur(50px); /* Adjust the blur radius */
+      
 }
+
 
 .footer {
     position: absolute;
@@ -41,23 +45,25 @@ header{
     background-color: #ffffff; /* Adjust to your preference */
     padding: 20px; /* Adjust as needed */
     text-align: left; /* Adjust as needed */
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
-    animation: fadeIn ease forwards; /* Add a fade-in animation */
+    transition: bottom 1s ease, opacity 1s ease;/* Add a smooth transition effect */
+    animation: fadeIn ease forwards; /* Add  a fade-in animation */
     opacity: 0; /* Initially set the opacity to 0 */
 }
 
 .footer:hover {
-    background-color: #ccc; /* Change the background color on hover */
+    background-color: #ebebeb; /* Change the background color on hover */
 }
 
 
 .footer-content {
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
 }
 
-.foster.animate-foster .footer-content{
+.footer.animate-footer .footer-content{
     transform: translateX(0);
 }
 
@@ -67,8 +73,8 @@ header{
 
 .footer-image img {
     max-width: 200px; /* Adjust the maximum width of the image */
-    height: 100;
-    width: 100;
+    height: 200;
+    width: 200;
 }
 
 
