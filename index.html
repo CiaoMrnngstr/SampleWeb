@@ -41,14 +41,17 @@
         <li><a href="#" class="action_btn">Get Started</a></li>
     </div>
         </header>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="footer-content">
                 <div class="footer-text">
-                    <h2>Footer</h2>
-                    <p>Here is some text in the footer.</p>
+                    <h2>Emblem Sneakers</h2>
+                    <p>Time to level up your sense of fashion!</p>
                 </div>
-                <div class="footer-image">
+                
+                <div class="footer-image" id="footer-image">
                     <img src="https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/17b52fd5-f87c-4533-aa13-853ba12b6a51">
+            
+            </div>
             </div>
         </footer>
         
@@ -93,6 +96,15 @@
             : 'fa-solid fa-bars'
         }
 
+        window.addEventListener('scroll', function() {
+    var footer = document.querySelector('.footer');
+    var position = footer.getBoundingClientRect();
+
+    // Adjust this value to determine when the animation starts
+    if (position.top < window.innerHeight * 0.75) {
+        footer.classList.add('animate-footer');
+    }
+});
     </script>
     
 
