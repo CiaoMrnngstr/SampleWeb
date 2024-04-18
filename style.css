@@ -6,14 +6,14 @@
 
 body{
     margin: 0;
-    height: 500vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
     background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
+
 li{
     list-style: none;
 }
@@ -21,7 +21,7 @@ li{
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 110%;
+    font-size: 96%;
 }
 
 a:hover{
@@ -33,27 +33,25 @@ header{
     text-align: center;
     position: relative;
     padding: 9px;
-    background: linear-gradient(to right, rgb(225, 180, 230, 0.5), transparent), #31145f; /* Adjust the colors as needed */
+    background: linear-gradient(to right, rgba(243, 224, 245, 0.5), transparent), #31145f; /* Adjust the colors as needed */
     backdrop-filter: blur(50px); /* Adjust the blur radius */
-      
 }
 
-
+/*
 .footer {
     position: absolute;
     bottom: -200px;
     width: 100%;
-    background-color: #ffffff; /* Adjust to your preference */
-    padding: 20px; /* Adjust as needed */
-    text-align: left; /* Adjust as needed */
-    transition: bottom 1s ease, opacity 1s ease;/* Add a smooth transition effect */
-    animation: fadeIn ease forwards; /* Add  a fade-in animation */
-    opacity: 0; /* Initially set the opacity to 0 */
-}
+    background-color: #ffffff; /* Adjust to your preference 
+    padding: 20px; /* Adjust as needed 
+    text-align: left; /* Adjust as needed 
+    transition: bottom 1s ease, opacity 1s ease;/* Add a smooth transition effect 
+    animation: fadeIn ease forwards; /* Add  a fade-in animation 
+    opacity: 0; /* Initially set the opacity to 0 
+}  
 
 .footer:hover {
-    background-color: #ebebeb; /* Change the background color on hover */
-}
+    background-color: #ebebeb; 
 
 
 .footer-content {
@@ -69,11 +67,11 @@ header{
 }
 
 .footer-text {
-    margin-right: 20px; /* Adjust spacing between text and image */
+    margin-right: 20px; /* Adjust spacing between text and image
 }
 
 .footer-image img {
-    max-width: 200px; /* Adjust the maximum width of the image */
+    max-width: 200px; 
     height: 200;
     width: 200;
 }
@@ -86,7 +84,7 @@ header{
     to {
         opacity: 1;
     }
-}
+} */
 
 .navbar {
     width: 100%;
@@ -182,16 +180,19 @@ main {
 
 
 aside#mero{
+    position: absolute;
     float: none;
     width: 100%;
     padding: 10px;
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
-    align-items: ;
-    justify-content:center;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
     color: #fff;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #mero h1{
