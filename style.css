@@ -37,6 +37,7 @@ header{
     backdrop-filter: blur(50px); /* Adjust the blur radius */
 }
 
+
 /*
 .footer {
     position: absolute;
@@ -215,12 +216,12 @@ aside#mero{
     .navbar .action_btn{
         display: none;
     }
-    aside#mero,
+   /* aside#mero,
     section#hero,
     article#lero {
         padding: 0; 
         text-align: center;
-    }
+    } */
     .navbar .toggle_btn{
         display: block;
     }
