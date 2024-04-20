@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    height: 600vh;
+    height: 500vh;
     background-color: rgb(255, 255, 255);
     background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ main {
 
 aside#home{
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +142,7 @@ aside#home{
     text-align: center;    
     color: #ffffff;
     text-shadow: -1px 1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 50px;
+    font-size: 59px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -179,16 +179,18 @@ aside#home{
 .section{
     position: relative;
     height: 120vh;
-    top: 500px;
-    background-image: url("https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7516a14f-089b-4afa-bd87-ae7868dd6c69");
+    top: 400px;
+    /*background-image: url("https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7516a14f-089b-4afa-bd87-ae7868dd6c69");*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .section#second {
-    color: rgb(0, 0, 0);
+    background-color: #e9e9e9;
+    color: rgb(100, 0, 0);
     font-size: 22px;
+    font-weight: 200;
     font-weight: 10;
     flex-direction: column;
     display: flex;
@@ -196,34 +198,36 @@ aside#home{
     text-align: center;
     justify-content: first baseline;
     position: relative;
-    text-shadow: -1px -1px 0 #693737,  
+    /*text-shadow: -1px -1px 0 #693737,  
     1px -1px 0 #ffffff,
     -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;
+    1px 1px 0 #ffffff;*/
     margin: 5px;
+    border-radius: 4%;
+    height: auto;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 550px;
+    margin-bottom: 450px;
 
 }
 
 .container { 
+    background-color: rgb(255, 255, 255);
     position: relative;
     width: 100%; 
     max-width: 1200px;
     height: auto;
-    top: 320px;
+    top: 300px;
     display: flex;
     justify-content: center; 
     align-items: stretch;
     gap: 0.90rem;
     transition: all 400ms;
- 
-    margin-bottom: auto;
+    margin-bottom: 1px;
 }
 
 .card {
     flex: 1;
-    height: 100%;
+    height: auto;
     transition: all 400ms; 
     cursor: pointer;
 }
@@ -231,6 +235,7 @@ aside#home{
 .card img{
 max-width: 105%;
 height: auto;
+border-radius: 15%;
 }
 
 .card:nth-child(odd) {
@@ -263,25 +268,21 @@ height: auto;
     border-radius: 7px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth transition */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10%;
+    margin-bottom: 3%;
 }
 
 /* respo design */
-.products-text h3{
+.lol{
     font-size: 66px;
     margin: 5%;
-    margin-top: 10%;
+    height: auto;
     text-align: left;
     font-style: oblique;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.products-text h3, h2{
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 
-.products-text h2{
+.lmao{
     font-style:oblique;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
@@ -289,13 +290,15 @@ height: auto;
 }
 
 .products{
-background-color: rgb(243, 243, 243);
+    
+background-color: rgb(255, 255, 255);
+height: auto;
 }
 
 .products{
     text-align: center;
     border-radius: 10px;
-    
+    margin-bottom: 100px;
 }
 
 .shoes{
@@ -323,13 +326,92 @@ background-color: rgb(243, 243, 243);
 }
 
 .last{
+    position: relative;
+    background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    background-image: url("https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/04512e90-e449-45c1-a93a-c6ab097081bd");
+}
 
 
-.last h1{
+
+.haha{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: left;    
+    color: #ffffff;
+    font-weight: 1000;
+    word-spacing: -10%;
+    text-shadow: #000000;
+    opacity: 69%;
+    font-size: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hahad{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .last-image{
     max-width: 100%;
+}
+
+
+.footah .contract{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+}
+
+.footah .contract .con{ 
+    flex:1 1 25rem;
+}
+
+.footah .contract .con h3{ 
+    color: #333;
+    font-size: 2.5rem; 
+    padding: 1rem 0;
+}
+
+.footah .contract .a{
+    display:block; 
+    color: #666; 
+    font-size: 1.5rem; 
+    padding: 1rem 0;
+}
+
+.footah .contact .box a:hover{ 
+    color: blue;
+    text-decoration: underline;
+}
+
+.footah .credit{
+text-align: center;
+padding: 1.5rem;
+margin-top: 1.5rem;
+padding-top: 2.5rem;
+font-size: 2rem;
+color: #333;
+border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footah .credit{ 
+    color:rgb(0, 0, 0);
+}
+.footah{ 
+    background-color:gold;
 }
 
 @media(max-width: 500px){
