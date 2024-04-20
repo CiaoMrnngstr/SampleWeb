@@ -171,31 +171,77 @@ aside#mero{
 }
 
 
+.visual img {
+    position: relative;
+    left: 4%;
+    width: 200px; 
+    height: 200px;
+}
+
 .section{
     background: rgb(255, 255, 255);
     position: relative;
     top: -3%;
     
     height: 70vh;
-    background-image: url("https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/b14fcacc-3925-4e5f-92b3-f3e7a17f4b02");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 .section#second {
-    color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     position: relative;
- 
     
 }
+
+.container { 
+    width: 100%; 
+    max-width: 1200px;
+    height: 300px; 
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 1.25rem;
+    transition: all 400ms;
+}
+
+.card {
+    flex: 1;
+    height: 100%;
+    transition: all 400ms; 
+    cursor: pointer;
+}
+
+.card img{
+max-width: 105%;
+height: auto;
+
+}
+
+.caed:nth-child(odd) {
+    translate: 0 -20px;
+}
+    
+.card:nth-child(even) {
+     translate: 0 20px;
+}
+   /* Gray out non-hovered cards */
+.container:hover >
+.card:not(:hover) { 
+    filter: grayscale(100%);
+}
+.card:hover{ 
+        flex: 3;
+    }
 
 /* respo design */
 
 
 
 @media(max-width: 500px){
+    .card{
+        flex-basis: 100%;
+    }
     .navbar .links,
     .navbar .action_btn{
         display: none;
