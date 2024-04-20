@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    height: 400vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
     background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
     background-repeat: no-repeat;
