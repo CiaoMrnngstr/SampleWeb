@@ -20,7 +20,7 @@
     <body>
         <header>
         <div class="navbar">
-        <div class="logo"><a href="#"><img src="https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/76e1c6ba-a082-4824-a259-df8fd953e51a" width="45" height="45"></a></div>
+        <div class="logo"><a href="#"><img src="https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/76e1c6ba-a082-4824-a259-df8fd953e51a" width="60" height="60"></a></div>
         <ul class="links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -124,34 +124,48 @@
 
         <section class="footah" id="about">
             <div class="contract" id="contact"></div>
-            <div class="con" >
-                <h3>Services</h3>
-                <a href="">Sneaker Sales</a>
-                <a href="">Sneaker Customization</a>
-                <a href="">Sneaker Cleanin and Restoration</a>
-            </div>
-
-            <div class="con">
-                <h3>about us</h3>
-                <a href=""></a>
-            </div>
-
-            <div class="con">
-                <h3>Contacts</h3>
-                <a href="">Email: jere.catacutan.au@phimaed.com</a>
-                <a href="">Phone: +63-927-270-2020</a>
-            </div>
-            <div class="con">
-                <h3></h3>
-                <a href="">Location: 27 Tinio st. Bongabon, Nueva Ecija</a>
-            </div>
-        </div>
+            <ul>
+                <li class="con">
+                    <h3 class="final">Services</h3>
+                    <ul>
+                        <li><a href="#" class="bow" >Sneaker Sales</a></li>
+                        <li><a href="#" class="bow" >Sneaker Customization</a></li>
+                        <li><a href="#" class="bow" href="#">Sneaker Cleaning and Restoration</a></li>
+                    </ul>
+                </li>
+                <li class="con">
+                    <h3 class="final">About Us</h3>
+                    <ul>
+                        <li><a href="#" class="bow" >Kicks is your destination for the latest sneaker releases, exclusive collaborations, and personalized customization services. With a passion for sneakers and a commitment to style, we're dedicated to providing the ultimate sneaker experience for enthusiasts and collectors alike.</a></li>
+                    </ul>
+                </li>
+                <li class="con">
+                    <h3 class="final">Contacts</h3>
+                    <ul>
+                        <li><a href="#" class="bow" >Email: jere.catacutan.au@phimaed.com</a></li>
+                        <li><a href="#" class="bow" >Phone: +63-927-270-2020</a></li>
+                        <li><a href="#" class="bow" >Location: 27 Tinio st. Bongabon, Nueva Ecija</a></li>
+                    </ul>
+                </li>
+            </ul>
             <div class="credit">Kicks | all rights reserved.</div>
         </section>
     
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-    
-    
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        };
+</script>
+
     </body>
     
     </html>

@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    height: 500vh;
+    height: 400vh;
     background-color: rgb(255, 255, 255);
     background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
     background-repeat: no-repeat;
@@ -21,7 +21,6 @@ li{
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    text-shadow: -1px 1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 120%;
 }
 
@@ -368,8 +367,14 @@ background-size: cover;
     max-width: 100%;
 }
 
+.footah{
+    background-color: #000000;
+    height: 30%;
+    padding: 1%;
+}
 
 .footah .contract{ 
+    height: 10%;
     display: flex; 
     flex-wrap: wrap; 
     gap: 1.5rem;
@@ -379,21 +384,21 @@ background-size: cover;
     flex:1 1 25rem;
 }
 
-.footah .contract .con h3{ 
-    color: #333;
+.footah .contract .con final{ 
+    color: #bbbbbb;
     font-size: 2.5rem; 
     padding: 1rem 0;
 }
 
-.footah .contract .a{
+.footah .contract .bow{
     display:block; 
-    color: #666; 
+    color: #000000; 
     font-size: 1.5rem; 
     padding: 1rem 0;
 }
 
-.footah .contact .box a:hover{ 
-    color: blue;
+.footah .contact .box bow:hover{ 
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 
@@ -403,15 +408,17 @@ padding: 1.5rem;
 margin-top: 1.5rem;
 padding-top: 2.5rem;
 font-size: 2rem;
-color: #333;
-border-top: .1rem solid rgba(0,0,0,.1);
+color: #0c0c0c;
+border-top: rgba(0,0,0,.1);
 }
 
 .footah .credit{ 
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 .footah{ 
-    background-color:gold;
+    height: auto;
+    background-color:rgb(0, 0, 0);
+    color: #ffffff;
 }
 
 @media(max-width: 500px){
