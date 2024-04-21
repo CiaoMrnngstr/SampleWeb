@@ -217,7 +217,7 @@ aside#home{
     border-radius: 4%;
     height: auto;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 450px;
+    margin-bottom: 300px;
 
 }
 
@@ -227,7 +227,7 @@ aside#home{
     width: 100%; 
     max-width: 1500px;
     height: auto;
-    top: 100px;
+    top: 90px;
     display:flex;
     justify-content: center; 
     align-items:center;
