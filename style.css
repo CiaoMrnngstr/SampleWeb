@@ -9,12 +9,9 @@ body{
     width: auto;
     height: auto;
     position: relative;
-    background-color: rgb(255, 255, 255);
-    background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    background-color: rgb(255, 255, 255);
 }
 
 li{
@@ -35,7 +32,7 @@ header{
     background-color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
-    padding: 9px;
+    padding: 19px;
     background: linear-gradient(to right, rgba(173, 89, 89, 0.8), transparent), #3e2466; /* Adjust the colors as needed */
     backdrop-filter: blur(50px); /* Adjust the blur radius */
 }
@@ -133,16 +130,23 @@ main {
     height: 100%;
 }
 
+aside{
+    position: relative;
+    background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
+}
 
 aside#home{
     width: 100%;
-    height: 500px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;    
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     text-shadow: -1px 1px 0 #000000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 59px;
     font-family: Arial, Helvetica, sans-serif;
@@ -155,11 +159,10 @@ aside#home{
 }
 
 .content {
-    background-color: #ffffff;
     position: relative;
     height: 100%;
     width: 100%;
-    top: 70%;
+    top: 40%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 10px;
@@ -174,6 +177,8 @@ aside#home{
     width: 300%; 
     height: 300%;
 }*/
+
+
 .primary-mb{
     font-size: 40px;
     color: #da0c0c;
@@ -205,7 +210,7 @@ aside#home{
     1px -1px 0 #ffffff,
     -1px 1px 0 #ffffff,
     1px 1px 0 #ffffff;*/
-    margin: 5px;
+    margin: 1px;
     border-radius: 4%;
     height: auto;
     font-family: 'Times New Roman', Times, serif;
