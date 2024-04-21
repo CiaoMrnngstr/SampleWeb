@@ -14,6 +14,14 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+aside{
+    position: relative;
+    background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
+}
+
 li{
     list-style: none;
 }
@@ -82,7 +90,7 @@ header{
 
 .action_btn:hover {
     transform: scale(1.05);
-    color: rgb(231, 167, 167);
+    color: rgb(255, 153, 37);
 
 }
 
@@ -92,15 +100,16 @@ header{
 /* menu */
 .dropdown_menu{
     display: none;
-    position: fixed; /*absolute*/
+    position: absolute; /*absolute*/
     right: 2rem;
-    top: 90px;
+    top: 120px;
     height: 0;
     background: rgba(255, 139, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
 }
 
 .dropdown_menu.open{
@@ -130,13 +139,7 @@ main {
     height: 100%;
 }
 
-aside{
-    position: relative;
-    background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-    background-image: url('https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7cd67e84-2230-4f4d-ab77-deb6b3fc80bf');
-}
+
 
 aside#home{
     width: 100%;
@@ -187,7 +190,7 @@ aside#home{
 .section{
     position: relative;
     height: 120vh;
-    top: 400px;
+    top: 200px;
     /*background-image: url("https://github.com/CiaoMrnngstr/SampleWeb/assets/160130271/7516a14f-089b-4afa-bd87-ae7868dd6c69");*/
     background-size: cover;
     background-position: center;
@@ -224,13 +227,13 @@ aside#home{
     width: 100%; 
     max-width: 1500px;
     height: auto;
-    top: 350px;
+    top: 100px;
     display:flex;
     justify-content: center; 
     align-items:center;
     gap: 0.90rem;
     transition: all 400ms;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 
 .card {
